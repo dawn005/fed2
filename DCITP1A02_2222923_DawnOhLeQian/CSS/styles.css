@@ -1,0 +1,819 @@
+@charset "utf-8";
+/* 
+Name: Dawn Oh
+Date: 5/6/2022
+filename: styles.css
+*/
+
+
+/* --------------------------------------------------
+                Table of contents 
+-----------------------------------------------------
+1. General styles 
+2. Home page styles
+3. SOC page styles
+4. Career page styles
+5. Feedback page styles
+*/
+
+/*--------------------------------------------------
+                General styles
+-----------------------------------------------------*/
+/* Body styles */
+body {
+    background-color: white;
+}
+
+html {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+p {
+    color: #6b6767;
+    text-align: justify;
+}
+
+h3 {
+    color: #6c5454;
+}
+
+/* nav styles */
+nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 4rem;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0;
+    color: #6c5454;
+    right: 16px;
+    border-style: none;
+    border-width: 5px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+a:hover {
+    color: rgb(143, 115, 115);
+    text-decoration: underline;
+    background-color: black;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+/*footer styles */
+footer.soc {
+    position: absolute;
+    top: 300%;
+    left: 40%;
+    font-size: 1.5rem;
+}
+
+footer.feedback {
+    position: absolute;
+    top: 210%;
+    left: 40%;
+    font-size: 1.5rem;
+}
+
+footer.careerf {
+    position: absolute;
+    top: 200%;
+    left: 40%;
+    font-size: 1.5em;
+}
+
+footer {
+    position: absolute;
+    top: 180%;
+    left: 40%;
+    font-size: 1.5rem;
+}
+
+.socials {
+    color: #6b6767;
+    border-style: none;
+}
+
+.socials:hover {
+    background-color: white;
+    color: rgb(170, 168, 168);
+    text-decoration: none;
+}
+
+footer p,
+footer li {
+    display: inline;
+}
+
+/*-----------------------------------------------------------
+                End of General styles
+-------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+                 Start of Home page styles 
+----------------------------------------------------------------*/
+/* Image styles */
+img#imagedawn {
+    height: 90%;
+    width: 15%;
+    position: absolute;
+    right: 10px;
+    top: 350px;
+}
+
+img#nature2 {
+    height: 60%;
+    width: 15%;
+    position: absolute;
+    top: 110%;
+    right: 5%;
+}
+
+img#nature1 {
+    height: 60%;
+    width: 15%;
+    position: absolute;
+    top: 110%;
+    left: 5%;
+    transform: rotate(180deg);
+}
+
+/*header styles*/
+.home>header {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+.title {
+    font-size: 8em;
+    position: absolute;
+    left: 150px;
+    top: 75%;
+    left: 37%;
+    font-weight: lighter;
+    color: black;
+}
+
+/* div styles */
+.home>div>p {
+    border-style: unset;
+    border-radius: 5%;
+    padding: 3%;
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-family: "Lucida Handwriting", serif;
+}
+
+div.intro,
+div.values {
+    width: 30%;
+}
+
+div.values {
+    position: absolute;
+    right: 10%;
+    top: 60%;
+}
+
+div.intro {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+
+div>p::first-letter {
+    text-transform: capitalize;
+}
+
+div.interests {
+    position: absolute;
+    top: 110%;
+}
+
+div.personality {
+    position: absolute;
+    top: 140%;
+}
+
+div.interests,
+div.personality {
+    left: 25%;
+    width: 50%;
+}
+
+/* heading styles */
+.home header {
+    width: 100%;
+    height: 30%;
+    margin: 0;
+}
+
+/* horizontal rule styles */
+.aftvalues {
+    position: absolute;
+    top: 105%;
+    border-top-style: ridge;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-color: #8a7373;
+    width: 80%;
+    border-width: 2px;
+    left: 10%;
+}
+
+/*---------------------------------------------------------------------------------------
+                                End of Home page styles
+----------------------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------------------------------
+                                    Start of SOC page styles 
+--------------------------------------------------------------------------------------------------*/
+/*header styles */
+header.soc {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 30%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    right: 0;
+}
+
+.sp {
+    font-size: 8em;
+    position: absolute;
+    left: 5%;
+    top: 88%;
+    color: black;
+    font-weight: lighter;
+}
+
+.splogo {
+    height: 45%;
+    width: 10%;
+    position: absolute;
+    right: 3%;
+    top: 118%;
+}
+
+/* flip styles */
+.flip {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    color: rgb(217, 214, 214);
+}
+
+.flip1,
+.flip2,
+.flip3,
+.flip4 {
+    background-color: transparent;
+    color: transparent;
+    text-align: center;
+    font-size: 2em;
+    z-index: 2;
+}
+
+.flip1 {
+    position: absolute;
+    top: 15%;
+    width: 50%;
+    height: 31%;
+}
+
+.flip2 {
+    position: absolute;
+    top: 15%;
+    width: 50%;
+    height: 31%;
+    left: 50%;
+}
+
+.flip3 {
+    position: absolute;
+    top: 46%;
+    width: 50%;
+    height: 31%;
+}
+
+.flip4 {
+    position: absolute;
+    top: 46%;
+    width: 50%;
+    height: 31%;
+    left: 50%;
+}
+
+.flip:hover .flip1:hover,
+.flip:hover .flip2:hover,
+.flip:hover .flip3:hover,
+.flip:hover .flip4:hover {
+    background-color: transparent;
+    color: transparent;
+}
+
+.flip>h1 {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    font-size: 3em;
+    z-index: 3;
+}
+
+.flip:hover {
+    background-color: transparent;
+    color: transparent;
+}
+
+.flip:hover .flip1,
+.flip:hover .flip2,
+.flip:hover .flip3,
+.flip:hover .flip4 {
+    color: rgb(217, 214, 214);
+    background-color: black;
+}
+
+.courses p {
+    color: black;
+    z-index: 1;
+    text-align: center;
+    padding-left: 2%;
+}
+
+.courses:hover {
+    color: #6b6767;
+}
+
+/* article and section styles */
+.dawnsp {
+    height: 10%;
+    width: 12%;
+    position: relative;
+    left: 5%;
+    bottom: 5%;
+    margin-bottom: 28%;
+}
+
+article {
+    position: absolute;
+    top: 60%;
+    height: auto;
+}
+
+h3 {
+    font-family: "Lucida Handwriting", serif;
+    font-size: 1.5rem;
+}
+
+.currentexp>* {
+    position: absolute;
+    bottom: 25%;
+    margin-bottom: 20%;
+    margin-right: 5%;
+}
+
+.currentexp>p {
+    left: 20%;
+    top: 10%;
+    font-size: 1.8em;
+}
+
+.currentexp>h3 {
+    left: 20%;
+    top: 0;
+}
+
+.courses>p {
+    width: 40%;
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+.dit {
+    position: absolute;
+    right: 5%;
+    top: 77%;
+}
+
+.daaa {
+    position: absolute;
+    top: 56%;
+    right: 5%;
+}
+
+.dcitp {
+    position: absolute;
+    top: 56%;
+    left: 3%;
+}
+
+.dism {
+    position: relative;
+    left: 3%;
+    margin-bottom: 4%;
+}
+
+span {
+    font-weight: bold;
+}
+
+/* table styles */
+table {
+    border: 1px solid rgba(84, 52, 55, 0.267);
+    border-collapse: collapse;
+    background: white;
+    position: absolute;
+    top: 120%;
+    left: 4%;
+    width: 70%;
+}
+
+td,
+th {
+    border: 1px solid rgba(84, 52, 55, 0.267);
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.theader {
+    font-size: 5em;
+}
+
+.ecg {
+    background-color: #e7e48e;
+}
+
+.math {
+    background-color: #ace6ef;
+}
+
+.fed {
+    background-color: #d4f8ba;
+}
+
+.fop {
+    background-color: #efcaca;
+}
+
+.foc {
+    background-color: #e9baf0;
+}
+
+.cpr {
+    background-color: #f6d6ac;
+}
+
+.cat {
+    background-color: #c2b7f0;
+}
+
+.sfl {
+    background-color: #c6dcb2;
+}
+
+/*-----------------------------------------------------------
+                    End of SOC page styles
+-------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------
+                    Start of Career page styles
+-----------------------------------------------------------------*/
+/* general styles */
+.career p {
+    font-size: 1.7em;
+    padding: 1%;
+}
+
+h1.career {
+    font-size: 8em;
+    position: absolute;
+    left: 5%;
+    top: 88%;
+    color: black;
+    font-weight: lighter;
+}
+
+/*header styles */
+header.career {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30%;
+    background-color: black;
+    width: 100%;
+}
+
+/* section styles (industry) */
+h3 {
+    font-family: "Lucida Handwriting", serif;
+    font-size: 2em;
+}
+
+.company {
+    height: 25%;
+    width: 20;
+    position: absolute;
+    right: 15%;
+    top: 60%;
+}
+
+.technology>h3 {
+    position: absolute;
+    left: 11%;
+    top: 55%;
+    width: 60%;
+}
+
+.technology>p {
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    width: 50%;
+}
+
+/* section styles (jobs) */
+
+.softwareengineer {
+    position: absolute;
+    top: 90%;
+    width: 80%;
+    height: 50%;
+}
+
+.softwareengineer>p {
+    position: absolute;
+    left: 43%;
+    width: 60%;
+    top: 23%;
+}
+
+.softwareengineer>img {
+    position: absolute;
+    left: 15%;
+    top: 28%;
+}
+
+.softwareengineer>h3 {
+    position: absolute;
+    left: 14%;
+    top: 10%;
+}
+
+article>img {
+    height: 40%;
+    width: 25%;
+}
+
+.data {
+    position: absolute;
+    top: 110%;
+    width: 95%;
+    height: 50%;
+}
+
+.data>h3 {
+    position: absolute;
+    top: 45%;
+    left: 12%;
+}
+
+.data>img {
+    position: absolute;
+    top: 59%;
+    right: 10%;
+}
+
+.data>p {
+    position: absolute;
+    top: 60%;
+    width: 50%;
+    left: 11%;
+}
+
+.cyberrisk {
+    position: absolute;
+    top: 140%;
+    width: 80%;
+    height: 50%;
+}
+
+.cyberrisk>h3 {
+    position: absolute;
+    top: 50%;
+    left: 14%;
+}
+
+.cyberrisk>img {
+    position: absolute;
+    top: 73%;
+    left: 15%;
+}
+
+.cyberrisk>p {
+    position: absolute;
+    top: 65%;
+    left: 43%;
+    width: 60%;
+}
+
+/* horizontal rules styles */
+.afttech {
+    position: absolute;
+    top: 90%;
+    border-top-style: ridge;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-color: #8a7373;
+    width: 70%;
+    border-width: 2px;
+    left: 15%;
+}
+
+.aftse {
+    position: absolute;
+    top: 130%;
+    border-top-style: ridge;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-color: #8a7373;
+    width: 70%;
+    left: 15%;
+    border-width: 2px;
+}
+
+.aftdata {
+    position: absolute;
+    top: 162%;
+    border-top-style: ridge;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-color: #8a7373;
+    width: 70%;
+    left: 15%;
+    border-width: 2px;
+}
+
+/*----------------------------------------------
+            End of Career page styles
+----------------------------------------------*/
+
+/*------------------------------------------
+        Start of Feedback page styles
+-------------------------------------------*/
+/* header styles */
+header.feedback {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.feedback {
+    font-size: 8rem;
+    position: absolute;
+    left: 150px;
+    top: 75%;
+    left: 15%;
+    font-weight: lighter;
+    color: black;
+}
+
+h5 {
+    position: absolute;
+    top: 42%;
+    left: 15%;
+    font-size: 1.6rem;
+    color: #6c5454;
+}
+
+/* form styles */
+label {
+    font-size: 1.2em;
+}
+
+input {
+    display: block;
+    width: 45%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    height: 1.7rem;
+    font-size: 1em;
+    border-width: 2px;
+    margin-left: 2%;
+}
+
+#mail {
+    position: absolute;
+    top: 59%;
+    left: 35%;
+}
+
+#submit,
+#reset {
+    width: 10%;
+    display: inline;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding-bottom: 4%;
+    padding-top: 2%;
+    border-radius: 10%;
+    background-color: #6c5454;
+    color: #b6b2b2;
+}
+
+#submit:hover,
+#reset:hover {
+    background-color: #5a4646;
+}
+
+textarea {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2%;
+}
+
+select {
+    display: block;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    font-size: larger;
+    margin-left: 2%;
+}
+
+form div.mailing {
+    display: flex;
+}
+
+#mail {
+    width: 25%;
+}
+
+#rank {
+    width: 25%;
+    display: block;
+}
+
+.design {
+    display: block;
+}
+
+.designchoices {
+    display: flex;
+    width: 20%;
+}
+
+legend {
+    font-size: 2em;
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    width: 70%;
+    left: 15%;
+    font-size: 1.5em;
+}
+
+option {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*----------------------------------------------
+            End of Feedback page styles
+------------------------------------------------*/

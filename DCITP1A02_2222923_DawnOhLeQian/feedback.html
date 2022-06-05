@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+            Name: Dawn Oh
+            Date: 5/6/2022
+            Filename: feedback.html
+        -->
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Dawn, Singapore Polytechnic, school" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+    <header class="feedback">
+        <nav>
+            <!--Nav bar-->
+            <ul>
+                <li><a href="index.html">About me</a></li>
+                <li><a href="soc.html">SOC</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <h1 class="feedback">Feedback</h1>
+    </header>
+    <section>
+        <h5>Questions marked with * are required to be answered</h5>
+        <form id="form" action="dawnoh05@gmail.com" method="post">
+            <fieldset id="userinfo">
+                <legend>User information</legend>
+                <label for="fname">First Name*</label>
+                <input type="text" name="fname" id="fname" pattern="[a-z]{2,}" required />
+                <label for="lname">Last Name*</label>
+                <input type="lname" name="lname" id="lname" pattern="[a-z]{2,}">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required />
+                <label for="phone">Phone number</label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{8}" placeholder="8 digits without space" />
+                <label for="date">Select today's date*</label>
+                <input type="date" name="date" id="date" required />
+                <label for="info">How did you find this website?</label>
+                <select name="info" id="info" size="4">
+                    <option value="internet">Internet</option>
+                    <option value="wordofmouth">Word of mouth</option>
+                    <option value="advertisements">Advertisements</option>
+                    <option value="others">Others</option>
+                </select>
+                <label>Which was your favourite page?</label>
+                <select name="favpage">
+                    <datalist id="favpage">
+                        <option value="Home page" selected>Home page</option>
+                        <option value="SOC page">SOC page</option>
+                        <option value="Careers page">Careers page</option>
+                        <option value="Feedback page">Feedback page</option>
+                    </datalist>
+                </select>
+                <div class="mailing">
+                    <label for="mail">Click to receive email updates of the website!</label>
+                    <input type="checkbox" name="mailing" id="mail">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Feedback</legend>
+                <div>
+                    <label for="rank">How would you rate my website? (0 => Poor, 10 => Excellent)</label>
+                    <input type="range" name="rank" id="rank" min="0" max="10" step="1" />
+                </div>
+                <div class="design">
+                    <label>Did you like the website design?</label>
+                    <br>
+                    <div class="designchoices">
+                        <label for="dyes">Yes</label>
+                        <input type="radio" name="design" id="dyes" value="yes" />
+                        <label for="dno">No</label>
+                        <input type="radio" name="design" id="dno" value="no" />
+                    </div>
+                </div>
+                <label>Share your feedback!*</label>
+                <textarea name="feedback" id="feedback" cols="125" rows="8" required></textarea>
+                <input type="submit" name="submit" id="submit">
+                <input type="reset" name="reset" id="reset">
+            </fieldset>
+        </form>
+    </section>
+    <footer class="feedback">
+        <address>
+            <p class="follow">Click to follow my &nbsp;</p>
+            <a href="https://www.instagram.com/dmvhs_/" class="socials">Instagram!</a>
+            <p> &copy; 2022 Dawn</p>
+        </address>
+    </footer>
+</body>
+
+</html>
